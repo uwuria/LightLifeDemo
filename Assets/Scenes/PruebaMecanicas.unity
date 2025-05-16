@@ -507,6 +507,7 @@ GameObject:
   - component: {fileID: 692955250}
   - component: {fileID: 692955249}
   - component: {fileID: 692955248}
+  - component: {fileID: 692955254}
   m_Layer: 0
   m_Name: Bola3
   m_TagString: Player3
@@ -719,6 +720,30 @@ Transform:
   - {fileID: 643042345}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &692955254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692955247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81159a0551f0c84ea14eb5462788e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxConnectionDistance: 10
+  minIntensity: 0
+  maxIntensity: 4
+  minRadius: 0
+  maxRadius: 6
+  safeLightRadius: 5
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  playerLight: {fileID: 643042346}
+  movementScript: {fileID: 692955249}
+  safeLightSources: []
 --- !u!1 &745796464
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +758,7 @@ GameObject:
   - component: {fileID: 745796467}
   - component: {fileID: 745796469}
   - component: {fileID: 745796470}
+  - component: {fileID: 745796471}
   m_Layer: 0
   m_Name: Bola2
   m_TagString: Player 2
@@ -945,6 +971,30 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &745796471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745796464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81159a0551f0c84ea14eb5462788e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxConnectionDistance: 10
+  minIntensity: 0
+  maxIntensity: 4
+  minRadius: 0
+  maxRadius: 6
+  safeLightRadius: 5
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  playerLight: {fileID: 383536421}
+  movementScript: {fileID: 745796469}
+  safeLightSources: []
 --- !u!1 &1011616940
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +1009,7 @@ GameObject:
   - component: {fileID: 1011616943}
   - component: {fileID: 1011616942}
   - component: {fileID: 1011616941}
+  - component: {fileID: 1011616947}
   m_Layer: 0
   m_Name: Bola4
   m_TagString: Player4
@@ -1171,6 +1222,30 @@ Transform:
   - {fileID: 1839090397}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1011616947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011616940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81159a0551f0c84ea14eb5462788e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxConnectionDistance: 10
+  minIntensity: 0
+  maxIntensity: 4
+  minRadius: 0
+  maxRadius: 6
+  safeLightRadius: 5
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  playerLight: {fileID: 1839090398}
+  movementScript: {fileID: 1011616942}
+  safeLightSources: []
 --- !u!1 &1119169784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,6 +1260,7 @@ GameObject:
   - component: {fileID: 1119169787}
   - component: {fileID: 1119169789}
   - component: {fileID: 1119169790}
+  - component: {fileID: 1119169791}
   m_Layer: 0
   m_Name: Bola1
   m_TagString: Player 1
@@ -1397,6 +1473,30 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1119169791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119169784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81159a0551f0c84ea14eb5462788e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxConnectionDistance: 10
+  minIntensity: 0
+  maxIntensity: 4
+  minRadius: 0
+  maxRadius: 6
+  safeLightRadius: 5
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  playerLight: {fileID: 1370965723}
+  movementScript: {fileID: 1119169789}
+  safeLightSources: []
 --- !u!1 &1370965721
 GameObject:
   m_ObjectHideFlags: 0

@@ -84,6 +84,15 @@ public class PlayerLightManager : MonoBehaviour
             movementScript.enabled = false;
             playerLight.enabled = false;
             isIsolated = true;
+
+            //Detener físicamente al jugador
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+
+                rb.velocity = Vector2.zero;
+                rb.angularVelocity = 0f;
+            }
         }
         // Calcular efecto visual por distancia (aunque esté aislado)
 
