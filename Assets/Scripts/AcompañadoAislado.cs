@@ -35,7 +35,7 @@ public class AcompañadoAislado : MonoBehaviour
 
 
         //mecanica Aislado, falta acompañado y añadir las luces y tambien programar la obtencion de estos items
-        if (distancia > 9.68f || distancia < -9.68f)
+        if (distancia > 10f || distancia < -10f)
         {
 
             amAislado = true;

@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383536420}
   - component: {fileID: 383536421}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,6 +204,59 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &488584882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 488584884}
+  - component: {fileID: 488584885}
+  m_Layer: 0
+  m_Name: LuzManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &488584884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488584882}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &488584885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488584882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bb41c30ac6ea85409531836a091dd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 1119169786}
+  player2: {fileID: 745796466}
+  light1: {fileID: 1370965723}
+  light2: {fileID: 383536421}
+  maxDistance: 10
+  minIntensity: 0
+  maxIntensity: 4
+  minRadius: 1
+  maxRadius: 6
 --- !u!1 &745796464
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +271,7 @@ GameObject:
   - component: {fileID: 745796467}
   - component: {fileID: 745796469}
   - component: {fileID: 745796470}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Bola2
   m_TagString: Player 2
   m_Icon: {fileID: 0}
@@ -444,7 +497,7 @@ GameObject:
   - component: {fileID: 1119169787}
   - component: {fileID: 1119169789}
   - component: {fileID: 1119169790}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Bola1
   m_TagString: Player 1
   m_Icon: {fileID: 0}
@@ -666,7 +719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370965722}
   - component: {fileID: 1370965723}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: L1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,11 +867,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4379927401055305258, guid: 2ce623c4a40967b4b818fdb0ba5bf035, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 745796466}
+    - target: {fileID: 4379927401055305258, guid: 2ce623c4a40967b4b818fdb0ba5bf035, type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 745796466}
     - target: {fileID: 5859129251498105180, guid: 2ce623c4a40967b4b818fdb0ba5bf035, type: 3}
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1119169786}
     - target: {fileID: 5859129251498105180, guid: 2ce623c4a40967b4b818fdb0ba5bf035, type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 1119169786}
+    - target: {fileID: 7330091008761514794, guid: 2ce623c4a40967b4b818fdb0ba5bf035, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 1119169786}
+    - target: {fileID: 7330091008761514794, guid: 2ce623c4a40967b4b818fdb0ba5bf035, type: 3}
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1119169786}
@@ -6552,6 +6621,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1902566130}
+  - {fileID: 488584884}
   - {fileID: 2140960168}
   - {fileID: 1119169786}
   - {fileID: 745796466}
