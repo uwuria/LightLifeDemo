@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class AcompañadoAislado : MonoBehaviour
 {
 
-    
+    public static bool amAislado = false;
 
     Vector3 posIn;
+
+    Light2D luzP1;
 
     GameObject posPlayer2;
     // Start is called before the first frame update
     void Start()
     {
+        
+        
+        
+
+        
+
         posIn = this.transform.position;
 
         posPlayer2 = GameObject.FindGameObjectWithTag("Player 2");
@@ -26,12 +35,21 @@ public class AcompañadoAislado : MonoBehaviour
 
 
         //mecanica Aislado, falta acompañado y añadir las luces y tambien programar la obtencion de estos items
-        if (distancia > 9.68f || distancia < -9.68f)
+        if (distancia > 10f || distancia < -10f)
         {
 
-            
-            GameManager.amAislado = true;
+            amAislado = true;
 
+            
+
+
+
+
+        }
+        else
+        {
+
+            amAislado=false;
         }
     }
 }
