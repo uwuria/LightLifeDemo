@@ -71,6 +71,8 @@ public class PlayerIsolationController : MonoBehaviour
         foreach (Transform lightSource in safeLightSources)
         {
             Gizmos.DrawWireSphere(lightSource.position, safeLightRadius);
+
+            //a
         }
     }
 
