@@ -13,12 +13,22 @@ public class CamaraDiv : MonoBehaviour
 
         if (this.name == "Cam1")
         {
-            cam.rect = new Rect(0f, 0f, 0.5f, 1.0f);
+            cam.rect = new Rect(0f, 0.5f, 0.5f, 0.5f);
         }
-        
+
         if (this.name == "Cam2")
         {
-            cam.rect = new Rect(0.5f, 0f, 0.5f, 1.0f);
+            cam.rect = new Rect(0.5f, 0.5f, 0.5f, 0.5f);
+        }
+
+        if (this.name == "Cam3")
+        {
+            cam.rect = new Rect(0f, 0f, 0.5f, 0.5f);
+        }
+        
+        if (this.name == "Cam4")
+        {
+            cam.rect = new Rect(0.5f, 0f, 0.5f, 0.5f);
         }
 
         
