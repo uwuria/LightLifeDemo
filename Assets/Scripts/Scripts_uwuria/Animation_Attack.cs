@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Animation_Attack : MonoBehaviour
 {
+    //tes
     private Animator attackAnimator;
     public bool Attack = false;
 
