@@ -21412,7 +21412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Attack: 0
-  framesToWait: 30
+  framesToWait: 60
 --- !u!1 &1204564173
 GameObject:
   m_ObjectHideFlags: 0

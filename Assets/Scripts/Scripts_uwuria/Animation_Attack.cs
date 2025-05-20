@@ -9,6 +9,7 @@ public class Animation_Attack : MonoBehaviour
 
     //esperar
     public int framesToWait = 30;
+    //uwuw
     int currentFrame = 0;
 
 
@@ -30,7 +31,7 @@ public class Animation_Attack : MonoBehaviour
         else
         {
 
-            currentFrame++;
+           // currentFrame++;
 
             if (currentFrame > framesToWait)
             {
